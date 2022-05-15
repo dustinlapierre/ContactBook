@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2daed3d3-13bc-48b3-8add-184cd155cf68": {
+      "ProjectGuid": "2daed3d3-13bc-48b3-8add-184cd155cf68",
+      "DisplayName": "DesktopContactsApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
