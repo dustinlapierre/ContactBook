@@ -27,6 +27,9 @@ namespace DesktopContactsApp
             InitializeComponent();
 
             this.contact = contact;
+            nameTextBox.Text = contact.Name;
+            emailTextBox.Text = contact.Email;
+            phoneTextBox.Text = contact.Phone;
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
@@ -46,7 +49,21 @@ namespace DesktopContactsApp
 
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
+            contact.Name = nameTextBox.Text;
+            contact.Email = emailTextBox.Text;
+            contact.Phone = phoneTextBox.Text;
 
+            //will automatically close the connection at the end
+            //this can be done with anything that implements IDisposable
+            using (SQLiteConnection connection = new SQLiteConnection(App.databasePath))
+            {
+                //will do nothing if table already exists, so it is safe to call each time
+                connection.CreateTable<Contact>();
+                connection.Update(contact);
+            }
+
+            //Close Window
+            Close();
         }
     }
 }
