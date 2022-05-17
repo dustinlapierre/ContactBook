@@ -4,6 +4,30 @@
              xmlns:local="clr-namespace:DesktopContactsApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        
+        <ControlTemplate x:Key="WatermarkTextBox" TargetType="TextBox">
+            <Grid>
+                <TextBox Text="{Binding Text, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Text="{TemplateBinding Tag}"
+                Margin="5,0,5,0"
+                Foreground="#FF808080"
+                FontStyle="Italic"
+                IsHitTestVisible="False"
+                x:Name="UserMessage"
+                Visibility="Hidden"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="Text" Value=""/>
+                        <Condition Property="IsKeyboardFocusWithin" Value="False"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Visibility" TargetName="UserMessage" Value="Visible"/>
+                </MultiTrigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        
     </Application.Resources>
 </Application>

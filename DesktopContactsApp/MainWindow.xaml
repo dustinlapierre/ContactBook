@@ -6,12 +6,13 @@
         xmlns:local="clr-namespace:DesktopContactsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <StackPanel Margin="10">
-        <Button Content="Add New Contact" Click="Button_Click"/>
-        <DockPanel LastChildFill="True" Margin="0 5 0 5">
-            <Label FontSize="20">Search: </Label>
-            <TextBox FontSize="22" TextChanged="TextBox_TextChanged" VerticalContentAlignment="Center"/>
-        </DockPanel>
+        <Button Content="Add New Contact" Click="Button_Click" Margin="0 0 0 5"/>
+        <TextBox FontSize="22" 
+                 TextChanged="TextBox_TextChanged"
+                 Template="{StaticResource WatermarkTextBox}"
+                 Tag="Search"/>
         <ListView x:Name="contactsListView"
                   Height="280"
                   Margin="0,5,0,0"

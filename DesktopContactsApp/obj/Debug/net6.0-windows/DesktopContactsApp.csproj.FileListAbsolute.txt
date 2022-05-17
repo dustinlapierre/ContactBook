@@ -42,3 +42,4 @@ C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\bin\Debug\ne
 C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\DesktopContactsApp.csproj.CopyComplete
 C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\ContactDetailsWindow.g.cs
 C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\ContactDetailsWindow.baml
+C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\App.baml

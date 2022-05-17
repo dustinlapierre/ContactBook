@@ -8,9 +8,18 @@
         Title="NewContactWindow" Height="450" Width="800">
     <Grid>
         <StackPanel Margin="10">
-            <TextBox x:Name="nameTextBox" Margin="0,0,0,5" />
-            <TextBox x:Name="emailTextBox" Margin="0,0,0,5" />
-            <TextBox x:Name="phoneTextBox" Margin="0,0,0,5" />
+            <TextBox x:Name="nameTextBox" 
+                     Margin="0,0,0,5"                      
+                     Template="{StaticResource WatermarkTextBox}"
+                     Tag="Name"/>
+            <TextBox x:Name="emailTextBox" 
+                     Margin="0,0,0,5" 
+                     Template="{StaticResource WatermarkTextBox}"
+                     Tag="Email"/>
+            <TextBox x:Name="phoneTextBox" 
+                     Margin="0,0,0,5" 
+                     Template="{StaticResource WatermarkTextBox}"
+                     Tag="Phone Number"/>
             <Button Content="Save" Click="Button_Click" />
         </StackPanel>
     </Grid>
