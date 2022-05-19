@@ -43,3 +43,6 @@ C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\ne
 C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\ContactDetailsWindow.g.cs
 C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\ContactDetailsWindow.baml
 C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\App.baml
+C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\Controls\ContactControl.g.cs
+C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\obj\Debug\net6.0-windows\Controls\ContactControl.baml

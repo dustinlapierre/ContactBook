@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\dooms\Desktop\CSharp\DesktopContactsApp\DesktopContactsApp\App.xaml
-3-1961996713
+4-993155439
 
-6272322217
+7998604536
 199-1421119763
-ContactDetailsWindow.xaml;MainWindow.xaml;NewContactWindow.xaml;
+ContactDetailsWindow.xaml;Controls\ContactControl.xaml;MainWindow.xaml;NewContactWindow.xaml;
 
 False
 

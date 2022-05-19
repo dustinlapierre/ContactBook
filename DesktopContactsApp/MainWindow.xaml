@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopContactsApp"
+        xmlns:uc="clr-namespace:DesktopContactsApp.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
@@ -17,13 +18,31 @@
                   Height="280"
                   Margin="0,5,0,0"
                   PreviewMouseDoubleClick="contactsListView_MouseDoubleClick">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <Grid>
+                                    <ContentPresenter/>
+                                    <Border CornerRadius="10" Name ="Border" />
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="true">
+                                        <Setter TargetName="Border" Property="Background" Value="#20005A9C"/>
+                                        <Setter TargetName="Border" Property="BorderThickness" Value="2"/>
+                                        <Setter TargetName="Border" Property="BorderBrush" Value="#60005A9C"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding Name}" FontSize="25" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding Email}" FontSize="15" Foreground="DodgerBlue"/>
-                        <TextBlock Text="{Binding Phone}" FontSize="15" FontStyle="Italic"/>
-                    </StackPanel>
+                    <uc:ContactControl Contact="{Binding}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
