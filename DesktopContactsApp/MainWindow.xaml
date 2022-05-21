@@ -34,6 +34,11 @@
                                         <Setter TargetName="Border" Property="BorderThickness" Value="2"/>
                                         <Setter TargetName="Border" Property="BorderBrush" Value="#60005A9C"/>
                                     </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="true">
+                                        <Setter TargetName="Border" Property="Background" Value="#20005A9C"/>
+                                        <Setter TargetName="Border" Property="BorderThickness" Value="2"/>
+                                        <Setter TargetName="Border" Property="BorderBrush" Value="#60005A9C"/>
+                                    </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
                         </Setter.Value>
